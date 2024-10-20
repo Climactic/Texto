@@ -1,0 +1,26 @@
+{
+  "name": "texto",
+  "author": "Climactic (https://climactic.co)",
+  "license": "Apache-2.0",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "serve": "bun run src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/js-yaml": "^4.0.9"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@tqman/nice-logger": "^1.0.6",
+    "elysia": "^1.1.22",
+    "elysia-compress": "^1.2.1",
+    "elysia-rate-limit": "^4.1.0",
+    "js-yaml": "^4.1.0",
+    "zod": "^3.23.8"
+  }
+}
