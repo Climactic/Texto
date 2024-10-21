@@ -11,18 +11,18 @@ const app = new Elysia();
 
 // Ratelimit
 app.use(
-  rateLimit({
-    max: RATE_LIMIT_MAX,
-    duration: RATE_LIMIT_DURATION,
-    generator: cloudflareGenerator,
-  })
+	rateLimit({
+		max: RATE_LIMIT_MAX,
+		duration: RATE_LIMIT_DURATION,
+		generator: cloudflareGenerator,
+	}),
 );
 
 // Logger
 app.use(
-  logger({
-    mode: "combined",
-  })
+	logger({
+		mode: "combined",
+	}),
 );
 
 // Compression
