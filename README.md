@@ -54,6 +54,7 @@ The following environment variables can be set in the `.env` file:
 - `PORT`: The port on which the server will run (default: 3000)
 - `RATE_LIMIT_MAX`: Maximum number of requests per duration (default: 100)
 - `RATE_LIMIT_DURATION`: Duration for rate limiting in milliseconds (default: 60000)
+- `RENDER_HTML`: Set to `true` to render markdown content as HTML (default: false)
 
 ## License
 
